@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    color: gray('800');
+    background-color: theme-color('light');
+    font-family: 'Raleway', sans-serif;
+}

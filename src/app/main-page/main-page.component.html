@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="text-center">I hope you are having a nice day!!</h1>
+  </div>  
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="text-center">Hey There!! Let's find a quote for you 
+          <span  [innerHTML]="icon[1]"></span>
+        </h1>
+      </div>
+      <div class="card-body">
+        <button class="btn" title="Click" (click)="showSomething('quote');showModal=true">
+          <p class="card-text">Click here to see your quote for the day!!</p>  
+        </button>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-header">
+        <h1 class="text-center">Hey There!! Let's find something about you 
+          <span [innerHTML]="icon[0]"></span>
+        </h1>
+      </div>
+      <div class="card-body">
+        <button class="btn" title="Click" (click)="showSomething('insult');showModal=true">
+          <p class="card-text">Click here to see something good about you!!</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal animate__animated animate__rotateIn animate__delay-2s animate__slower-5s" [ngClass]="{'show':showModal}">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- <div class="modal-header" style='border: none;'>
+        </div> -->
+        <div class="modal-body">
+          <p>{{result}}</p>
+        </div>
+        <div class="modal-footer" style='border: none;'>
+          <button type="button" class="btn btn-danger" (click)="showModal=!showModal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  

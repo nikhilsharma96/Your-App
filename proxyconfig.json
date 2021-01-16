@@ -1,0 +1,18 @@
+{
+    "/insult/*": {
+        "target": "https://evilinsult.com",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/insult": ""
+        }
+    },
+    "/quote/*": {
+        "target": "https://favqs.com",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/quote": ""
+        }
+    }
+}
