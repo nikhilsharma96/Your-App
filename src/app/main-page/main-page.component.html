@@ -31,10 +31,12 @@
   <div class="modal animate__animated animate__rotateIn animate__delay-2s animate__slower-5s" [ngClass]="{'show':showModal}">
     <div class="modal-dialog">
       <div class="modal-content">
-        <!-- <div class="modal-header" style='border: none;'>
-        </div> -->
+        <div class="modal-header" style='border: none;  display: flex;
+        justify-content: center;'>
+          {{emoji}}
+        </div>
         <div class="modal-body">
-          <p>{{result}}</p>
+          <p>👉{{result}}👈</p>
         </div>
         <div class="modal-footer" style='border: none;'>
           <button type="button" class="btn btn-danger" (click)="showModal=!showModal">Close</button>

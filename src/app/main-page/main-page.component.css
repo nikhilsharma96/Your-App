@@ -71,3 +71,6 @@ span{
 .jumbotron{
     background-color: inherit;
 }
+.modal-header{
+    font-size: 50px;
+}
